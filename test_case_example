@@ -1,0 +1,27 @@
+Positive Test Case Example
+
+ID: 1
+Title: User is able to filter dresses by size
+Fixture: N/A 
+Steps:
+#1 Open website at {url}
+#2 Hover over 'Dresses' tab
+#3 Click on 'Summer Dresses'
+#4 Check 'L' size-checkbox
+#5 Select random dress and click
+Expected results:
+Dress 'Size' contains 'L'
+
+Negative Test Case Example
+
+ID: 2
+Title: User is NOT able to select 'Red' color
+Fixture: N/A
+Steps:
+#1 Open website at {url}
+#2 Hover over 'Dresses' tab
+#3 Click on 'Summer Dresses'
+#4 Change color name at {url}
+Expected results:
+User should see error message
+

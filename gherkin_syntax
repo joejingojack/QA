@@ -1,0 +1,26 @@
+Gherkin
+Feature: A short description
+
+Given: Set of pre-conditions
+When: When an event occurs
+Then: What outcome is achieved
+
+Example:
+Given: Open website at {url}
+When: When I hover 'Summer Dresses' AND I click 'L' Size
+Then: Then I should see only 'L' dresses;
+(For negative Then step we can use But in place of Then)
+
+-----------------------------------------------------------
+
+Gherkin
+Feature: User should be able to filter dresses
+
+@ID1
+Scenario: User is able to filter dresses by size 
+Given I open website at {url}
+When I Hover over 'Dresses' tab
+And I Click on 'Summer Dresses'
+And I Check 'L' size-checkbox
+And I Select random dress and click
+Then Dress 'Size' result should contain 'L'
